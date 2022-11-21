@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(./images/bg-intro-desktop.png);
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.main-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding: 5rem;
+    margin: 5rem;
+    position: absolute;
+}
+
+.left-container{
+    width: 50%;
+}
+
+.left-container h1{
+    color: #fff;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.left-container p{
+    width: 130%;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top:1rem;
+    line-height: 20px;
+    opacity: 0.8;
+}
+
+.right-container{
+    width: 32.5rem;
+    display:flex;
+    flex-direction:column;
+    margin:2rem;
+    margin-left: 7rem;
+    box-sizing:border-box;
+    
+}
+
+.right-container-header{
+    width: 100%;
+    height: 3rem;
+    background-color: hsl(248, 32%, 49%);
+    border:none;
+    border-radius:10px;
+    display:flex;
+    flex-direction:row;
+    padding: 1rem;
+    padding-left: 4rem;
+    -webkit-box-shadow: 0px 4px 2px 0px rgba(42, 50, 50, 0.39);
+-moz-box-shadow:    0px 4px 2px 0px rgba(42, 50, 50, 0.39);
+box-shadow:         0px 4px 2px 0px rgba(42, 50, 50, 0.39);
+}
+
+.right-container-header span{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.right-container-header p{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    opacity:0.7;
+
+}
+
+.space{
+    visibility:hidden;
+}
+
+.form{
+    width: 100%;
+    height: 26rem;
+    background: #fff;
+    border:none;
+    border-radius:12px;
+   display:flex;
+   flex-direction: column;
+   margin: 1rem 0 1rem 0;
+   padding:2rem;
+   -webkit-box-shadow: 0px 5px 2px 0px rgba(42, 50, 50, 0.39);
+-moz-box-shadow:    0px 5px 2px 0px rgba(42, 50, 50, 0.39);
+box-shadow:         0px 5px 2px 0px rgba(42, 50, 50, 0.39);
+}
+
+.form input{
+    width: 100%;
+    height: 2.3rem;
+    border: 0.1px solid hsl(246, 25%, 77%);
+    border-radius: 6px;
+    padding: 1rem;
+    margin:0.6rem 0 0.6rem 0;
+    font-weight: 700;
+    font-size:12px;
+}
+
+.form img{
+    width: 1rem;
+    position:relative;
+    left: 17rem;
+    bottom: 1.75rem;
+    display: none;
+}
+
+.form small{
+    font-size: 8px;
+    color: hsl(0, 100%, 74%);
+    opacity: 1;
+    font-weight: 700;
+    position:relative;
+    left: 12rem;
+    bottom: 0.4rem;
+    display:none;
+}
+
+.form button{
+    width:100%;
+    height: 3rem;
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    border:none;
+    margin-top: 1.5rem;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing:1px;
+    -webkit-box-shadow: 0px 3px 2px 0px rgba(0, 118, 0, 0.63);
+-moz-box-shadow:    0px 3px 2px 0px rgba(0, 118, 0, 0.63);
+box-shadow:         0px 3px 2px 0px rgba(0, 118, 0, 0.63);
+cursor: pointer;
+
+}
+
+.form p{
+    font-size: 8px;
+    color: hsl(246, 25%, 77%);
+    opacity: 0.9;
+    margin-top: 0.5rem;
+    margin-left: 2.5rem;
+}
+
+.form span{
+    color: hsl(0, 94%, 57%);
+    font-weight: 700;
+    opacity: 1;
+}
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 375px){
+    body{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        height: 100vh;
+        min-width: 16.5rem;
+    }
+
+    .main-container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .left-container h1{
+        text-align:center;
+        position: relative;
+        bottom: 5rem;
+    }
+
+    .left-container p{
+        text-align:center;
+        font-size:16px;
+        width:95%;
+        position: relative;
+        bottom: 3rem;
+    }
+
+    .right-container-header{
+        width: 20rem;
+        height: 7.5rem;
+        align-items:center;
+        justify-content:center;
+        position:relative;
+        left: 3rem;
+        bottom: 2rem;
+        display:flex;
+        flex-wrap: wrap;
+        text-align:center;
+    }
+
+    .right-container-header span{
+        font-size:16px;
+    }
+    .right-container-header p{
+        font-size:16px;
+    }
+
+    .form{
+        width: 20rem;
+        height: 25rem;
+        position: relative;
+        left:3rem;
+        bottom:1rem;
+    }
+
+    .form button{
+        height: 3.5rem;
+        font-size: 14px;
+        text-align:center;
+    }
+
+    .form p{
+        width: 100%;
+        font-size: 10px;
+        position:relative;
+        right: 2rem;
+    }
+
+    .form span{
+        font-size: 12px;
+        font-weight: bold;
+        position:relative;
+        left: 4rem;
+
+    }
+
+
+}

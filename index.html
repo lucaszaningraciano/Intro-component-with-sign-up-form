@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Frontend Mentor Challenge 8</title>
+</head>
+<body>
+    <main class="main-container">
+        <div class="left-container">
+            <h1>Learn to code by watching others</h1>
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+        </div><!--left-container-->
+
+        <div class="right-container">
+            <div class="right-container-header">
+                <span>Try it free 7 days </span>
+                <div class=space>_</div>
+                <p>then $20/mo. thereafter</p>
+
+            </div><!--right-container-header-->
+
+            <form id="form" class="form">
+                <div class="form-control">
+                    <input type="text" id="firstname" placeholder="First Name" class="inputs required" oninput="firstNameValidate()">
+                    <img src="./images/icon-error.svg" alt="error" class="error-img">
+                    <small class="small-required">First Name cannot be empty</small>
+                </div><!--form-control-->
+
+                <div class="form-control">
+                    <input type="text" id="lastname" placeholder="Last Name" class="inputs required" oninput="lastNameValidate()">
+                    <img src="./images/icon-error.svg" alt="error" class="error-img">
+                    <small class="small-required">Last Name cannot be empty</small>
+                </div><!--form-control-->
+
+                <div class="form-control">
+                    <input type="text" id="email" placeholder="Email Address" class="inputs required" oninput="emailValidate()">
+                    <img src="./images/icon-error.svg" alt="error" class="error-img">
+                    <small class="small-required">Looks like this is not an email</small>
+                </div><!--form-control-->
+
+                <div class="form-control">
+                    <input type="password" id="password" placeholder="Password" class="inputs required" oninput="passwordValidate()">
+                    <img src="./images/icon-error.svg" alt="error" class="error-img">
+                    <small class="small-required">Password cannot be empty</small>
+                </div><!--form-control-->
+
+                <button type="submit">CLAIM YOUR FREE TRIAL</button>
+                <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+            </form>
+
+        </div><!--right-container-->
+
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
